@@ -28,6 +28,8 @@ class School
   def convert_end_time_to_clock_time
     if self.end_time.to_i >= 13
       (self.end_time.to_i - 12).to_s + ':00'
+    else
+      self.end_time
     end
   end
 
